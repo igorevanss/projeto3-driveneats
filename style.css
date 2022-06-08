@@ -6,8 +6,7 @@
 }
 
 body {
-  min-width: 414px;
-  max-width: 100%;
+  width: 414px;
   box-sizing: border-box;
   font-family: 'Righteous', cursive;
   font-family: 'Roboto', sans-serif;
