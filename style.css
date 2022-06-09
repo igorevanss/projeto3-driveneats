@@ -62,7 +62,8 @@ h2 {
   font-size: 26px;
 }
 
-.choose-food h2{
+.choose-food h2,
+.plate:first-of-type {
   margin-left: 20px;
 }
 
@@ -101,10 +102,6 @@ main > div:last-of-type {
   gap: 10px;
   position: relative;
   border: 6px solid #FFFFFF;
-}
-
-.plate:first-of-type {
-  margin-left: 20px;
 }
 
 .plate:last-of-type {
@@ -149,11 +146,15 @@ main > div:last-of-type {
   display: none;
 }
 
-.selected-food1, .selected-food2, .selected-food3 {
+.selected-food1,
+.selected-food2,
+.selected-food3 {
   border: 6px solid #32B72F;
 }
 
-.selected-food1 ion-icon, .selected-food2 ion-icon, .selected-food13 ion-icon {
+.selected-food1 ion-icon,
+.selected-food2 ion-icon,
+.selected-food3 ion-icon {
   display: inline;
 }
 

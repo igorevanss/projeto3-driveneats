@@ -62,8 +62,6 @@ function whatsappMsg() {
     Number(drinkPrice.replace(',', '.')) +
     Number(dessertPrice.replace(',', '.'))
 
-  console.log(sumNumber.toFixed(2))
-
   let textMsg = window.encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${eats}\n- Bebida: ${drinks}\n- Sobremesa: ${dessert}\nTotal: ${sumNumber.toFixed(2)}`);
 
   window.open(`https://api.whatsapp.com/send?l=pt-BR&text=${textMsg}&phone=5581994525219`, '_blank');
