@@ -18,9 +18,6 @@ body::-webkit-scrollbar {
 
 .container {
   max-width: 414px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 header {
@@ -152,11 +149,11 @@ main > div:last-of-type {
   display: none;
 }
 
-.selected-food {
+.selected-food1, .selected-food2, .selected-food3 {
   border: 6px solid #32B72F;
 }
 
-.selected ion-icon {
+.selected-food1 ion-icon, .selected-food2 ion-icon, .selected-food13 ion-icon {
   display: inline;
 }
 
@@ -189,23 +186,20 @@ button p {
   color: #FFFFFF;
 }
 
-button p:last-of-type {
+button:last-of-type {
   display: none;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
 }
 
-.all-selected button {
+.all-selected button:first-of-type {
+  display: none;
+}
+
+.all-selected button:last-of-type {
+  display: inline;
   background-color:#32B72F
 }
 
-.all-selected button p:first-of-type {
-  display: none;
-}
-
-.all-selected button p:last-of-type {
-  display: inline;
+.all-selected button:last-of-type p {
+  font-weight: 700;
+  font-size: 20px;
 }

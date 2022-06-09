@@ -19,21 +19,21 @@
         <div class="choose-food">
           <h2>Primeiro, seu prato</h2>
           <div class="plates">
-            <div class="plate">
+            <div class="plate" onclick="selectedFood(this)">
               <img src="./images/frango_yin_yang 1.png" alt="" />
               <h3>Frango Yin Yang</h3>
               <h4>Um pouco de batata,<br />um pouco de salada</h4>
               <p>R$ <span>14,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedFood(this)">
               <img src="./images/frango_yin_yang 1.png" alt="" />
               <h3>Frango Sang Yong</h3>
               <h4>Um pouco de batata,<br />um pouco de salada</h4>
               <p>R$ <span>16,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedFood(this)">
               <img src="./images/frango_yin_yang 1.png" alt="" />
               <h3>Frango Lin Veyng</h3>
               <h4>Um pouco de batata,<br />um pouco de salada</h4>
@@ -45,21 +45,21 @@
         <div class="choose-food">
           <h2>Agora, sua bebida</h2>
           <div class="plates">
-            <div class="plate">
+            <div class="plate" onclick="selectedDrink(this)">
               <img src="./images/coquinha_gelada 1.png" alt="" />
               <h3>Coquinha gelada</h3>
               <h4>Lata 350ml</h4>
               <p>R$ <span>4,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedDrink(this)">
               <img src="./images/coquinha_gelada 1.png" alt="" />
               <h3>Coquinha gostosa</h3>
               <h4>Lata 350ml</h4>
               <p>R$ <span>6,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedDrink(this)">
               <img src="./images/coquinha_gelada 1.png" alt="" />
               <h3>Coquinha delícia</h3>
               <h4>Lata 350ml</h4>
@@ -71,21 +71,21 @@
         <div class="choose-food">
           <h2>Por fim, sua sobremesa</h2>
           <div class="plates">
-            <div class="plate">
+            <div class="plate" onclick="selectedDessert(this)">
               <img src="./images/pudim 1.png" alt="" />
               <h3>Pudim</h3>
               <h4>Apenas pudim</h4>
               <p>R$ <span>7,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedDessert(this)">
               <img src="./images/pudim 1.png" alt="" />
               <h3>Quindin</h3>
               <h4>Apenas quindin</h4>
               <p>R$ <span>5,90</span></p>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="plate">
+            <div class="plate" onclick="selectedDessert(this)">
               <img src="./images/pudim 1.png" alt="" />
               <h3>Dindim</h3>
               <h4>Apenas dindim</h4>
@@ -95,11 +95,11 @@
           </div>
         </div>
       </main>
-      <footer class="">
+      <footer>
         <button>
           <p>Selecione os 3 itens<br />para fechar o pedido</p>
-          <p>Fechar pedido</p>
         </button>
+        <button onclick=""><p>Fechar pedido</p></button>
       </footer>
     </div>
 
