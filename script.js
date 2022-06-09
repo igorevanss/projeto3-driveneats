@@ -45,3 +45,26 @@ function allSelected() {
     orderedFood.classList.add('all-selected')
   }
 }
+
+//Sending a whatsapp message
+function whatsappMsg() {
+  let eats = drivenEats.querySelector('h3').innerHTML
+  let eatPrice = drivenEats.querySelector('span').innerHTML
+
+  let drinks = drivenDrinks.querySelector('h3').innerHTML
+  let drinkPrice = drivenDrinks.querySelector('span').innerHTML
+
+  let dessert = drivenDessert.querySelector('h3').innerHTML
+  let dessertPrice = drivenDessert.querySelector('span').innerHTML
+
+  let sumNumber =
+    Number(eatPrice.replace(',', '.')) +
+    Number(drinkPrice.replace(',', '.')) +
+    Number(dessertPrice.replace(',', '.'))
+
+  console.log(sumNumber.toFixed(2))
+
+  let textMsg = window.encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${eats}\n- Bebida: ${drinks}\n- Sobremesa: ${dessert}\nTotal: ${sumNumber.toFixed(2)}`);
+
+  window.open(`https://api.whatsapp.com/send?l=pt-BR&text=${textMsg}&phone=5581994525219`, '_blank');
+}
