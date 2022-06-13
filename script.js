@@ -48,6 +48,9 @@ function allSelected() {
 
 //Sending a whatsapp message
 function whatsappMsg() {
+  let = userName = prompt('Qual seu nome?')
+  let = userLiving = prompt('Qual seu endereço?')
+
   let eats = drivenEats.querySelector('h3').innerHTML
   let eatPrice = drivenEats.querySelector('span').innerHTML
 
@@ -65,7 +68,7 @@ function whatsappMsg() {
   let textMsg = window.encodeURIComponent(
     `Olá, gostaria de fazer o pedido:\n- Prato: ${eats}\n- Bebida: ${drinks}\n- Sobremesa: ${dessert}\nTotal: R$ ${sumNumber.toFixed(
       2
-    )}`
+    )}\n\nNome: ${userName}\nEndereço: ${userLiving}`
   )
 
   window.open(
