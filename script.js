@@ -119,12 +119,15 @@ function cancelOrder() {
   const cancel = document.querySelector('.askOrder')
   cancel.classList.add('none')
 
-  const cancelOrders1 = document.querySelector('.selected-food1')
-  cancelOrders1.classList.remove('selected-food1')
+  const cancelOrder1 = document.querySelector('.selected-food1')
+  cancelOrder1.classList.remove('selected-food1')
 
-  const cancelOrders2 = document.querySelector('.selected-food2')
-  cancelOrders2.classList.remove('selected-food2')
+  const cancelOrder2 = document.querySelector('.selected-food2')
+  cancelOrder2.classList.remove('selected-food2')
 
-  const cancelOrders3 = document.querySelector('.selected-food3')
-  cancelOrders3.classList.remove('selected-food3')
+  const cancelOrder3 = document.querySelector('.selected-food3')
+  cancelOrder3.classList.remove('selected-food3')
+
+  const cancelButton = document.querySelector('footer')
+  cancelButton.classList.remove('all-selected')
 }
