@@ -204,3 +204,94 @@ button:last-of-type {
   font-weight: 700;
   font-size: 20px;
 }
+
+.askOrder {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.orders {
+  width: 377px;
+  height: 353px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  background-color: #50D074;
+  padding: 26px;
+}
+
+.orders > p:first-of-type {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+
+.items, .full-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items > p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.orders > div:nth-of-type(2) {
+  margin: 10px 0;
+}
+
+.full-price > p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+.orders button {
+  width: 329px;
+  height: 52px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  display: inline;
+  margin-top: 10px;
+}
+
+.orders > button > p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #50D074;
+}
+
+.orders > p:last-of-type {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 28px;
+}
+
+.none {
+  display: none;
+}
