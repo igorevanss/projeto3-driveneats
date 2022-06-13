@@ -57,9 +57,6 @@ function allSelected() {
 
 // User will confirm his order
 function seeOrders() {
-  userName = prompt('Qual seu nome?')
-  userLiving = prompt('Qual seu endereço?')
-
   eats = drivenEats.querySelector('h3').innerHTML
   eatPrice = drivenEats.querySelector('span').innerHTML
 
@@ -101,6 +98,8 @@ function seeOrders() {
 
 //Sending a whatsapp message
 function whatsappMsg() {
+  userName = prompt('Qual seu nome?')
+  userLiving = prompt('Qual seu endereço?')
   let textMsg = window.encodeURIComponent(
     `Olá, gostaria de fazer o pedido:\n- Prato: ${eats}\n- Bebida: ${drinks}\n- Sobremesa: ${dessert}\nTotal: R$ ${sumNumber.toFixed(
       2
